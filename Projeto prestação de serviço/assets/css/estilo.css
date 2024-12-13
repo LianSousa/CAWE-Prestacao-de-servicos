@@ -1,31 +1,98 @@
-body{
-    background-color: #0656bede; 
+* {
+    font-family: "Average Sans", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+/* Sessão Menu */
+body {
+    background-color: #0689f5de;
     margin: 0;
- }
- 
- .interface div img{
-     width: 150px;
-     margin
- }
+}
 
-.interface{
-    width: 1570px;
+.interface {
+    width: auto;
     margin: auto;
-} 
+}
 
-
-header{
+header {
     background-color: #fff;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
-.interface nav ul{
-    padding: 0px 0px;
+header img {
+    width: 70px;
+}
+
+header nav {
     display: flex;
-    flex-direction: row;  
-    display: inline-block;
-    float: right;
-    margin-top: 0px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 25px;
 }
 
+header nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    padding-left: 20px;
+}
+
+header nav ul li a {
+    color: #282e2b;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    color: #054fda;
+}
+
+/* Sessão Home */
+
+section#home {
+    color: white;
+    background-image: url('../imagens/fundo home.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 30px 20px;
+}
+
+section#home main {
+    display: flex;
+    justify-content: flex-end;
+}
+
+section#home .conteudo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    max-width: 600px;
+}
+
+section#home h1 {
+    font-size: 25pt;
+    font-weight: bold;
+    text-align: right;
+    margin: 10px 0;
+}
+
+section#home h2 {
+    font-size: 20pt;
+    font-weight: bold;
+    text-align: right;
+    margin: 0;
+}
+
+section#home p {
+    font-size: 14pt;
+    text-align: justify;
+    margin: 10px 0;
+}
