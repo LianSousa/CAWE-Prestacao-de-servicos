@@ -1,0 +1,31 @@
+body{
+    background-color: #0656bede; 
+    margin: 0;
+ }
+ 
+ .interface div img{
+     width: 150px;
+     margin
+ }
+
+.interface{
+    width: 1570px;
+    margin: auto;
+} 
+
+
+header{
+    background-color: #fff;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.interface nav ul{
+    padding: 0px 0px;
+    display: flex;
+    flex-direction: row;  
+    display: inline-block;
+    float: right;
+    margin-top: 0px;
+}
+
