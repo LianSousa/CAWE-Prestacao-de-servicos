@@ -54,6 +54,38 @@ header nav ul li a:hover {
     color: #054fda;
 }
 
+/* Menu suspenso */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropdown-content li {
+    padding: 0;
+    margin: 0;
+}
+
+.dropdown-content li a {
+    padding: 10px;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content li a:hover,
+.dropdown-content li a:focus {
+    background-color: #cecece;
+}
+
+/* Mostrar Dropdown ao Passar o Mouse */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+
 /* Sessão Home */
 
 section#home {
@@ -62,32 +94,39 @@ section#home {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    padding: 30px 20px;
+    padding: 10px 5px;
 }
 
 section#home main {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
+    padding: 10px 45px;
 }
 
 section#home .conteudo {
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: right;
     max-width: 600px;
+    padding: 50px 30px;
+}
+
+section#home .titulo {
+    display: flex;
+    justify-content: left;
 }
 
 section#home h1 {
     font-size: 25pt;
     font-weight: bold;
-    text-align: right;
+    text-align: left;
     margin: 10px 0;
 }
 
 section#home h2 {
     font-size: 20pt;
     font-weight: bold;
-    text-align: right;
+    text-align: center;
     margin: 0;
 }
 
@@ -95,4 +134,69 @@ section#home p {
     font-size: 14pt;
     text-align: justify;
     margin: 10px 0;
+}
+
+/* Sessão Serviços */
+
+section#servicos {
+    color: #054fda;
+    background-color: #fff;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+#servicos .titulo {
+    width: 100%;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+#servicos .conteudo {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+section#servicos .servico {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    flex: 1 1 calc(25% - 40px);
+    box-sizing: border-box;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    text-align: center;
+    color: #282e2b;
+}
+
+#servicos .servico:hover {
+    background-color: #cecece;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+#servicos figure {
+    margin: 0;
+}
+
+#servicos img {
+    max-width: 50px;
+    margin-bottom: 10px;
+}
+
+section#servicos h2 {
+    margin: 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 16pt;
+}
+
+section#servicos .servico p {
+    margin: 0;
+    text-align: center;
 }
