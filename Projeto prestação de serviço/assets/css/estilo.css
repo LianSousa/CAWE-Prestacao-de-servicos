@@ -2,6 +2,7 @@
     font-family: "Average Sans", sans-serif;
     font-weight: 500;
     font-style: normal;
+    box-sizing: border-box;
 }
 
 /* Sessão Menu */
@@ -90,17 +91,17 @@ header nav ul li a:hover {
 
 section#home {
     color: white;
-    background-image: url('../imagens/fundo home.png');
+    background-image: url('../imagens/logo\ 2.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    padding: 10px 5px;
+    padding: 20px 0 20px 0;
 }
 
 section#home main {
     display: flex;
     justify-content: space-between;
-    padding: 10px 45px;
+    padding: 0 45px;
 }
 
 section#home .conteudo {
@@ -108,28 +109,28 @@ section#home .conteudo {
     flex-direction: column;
     align-items: right;
     max-width: 600px;
-    padding: 50px 30px;
+    padding: 50px 15px;
 }
 
 section#home .titulo {
     display: flex;
-    justify-content: left;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 section#home .borda{
-    width: 80px;
-    background-color: #fff;
+    width: 100px;
     height: 6px;
-    margin-left: 50px;
-    margin-bottom: 20px;
+    background-color: white;
     border-radius: 10px;
+    margin-top: 5px;
 }
 
 section#home h1 {
     font-size: 25pt;
     font-weight: bold;
     text-align: left;
-    margin: 10px 0;
+    margin: 0;
 }
 
 section#home h2 {
@@ -140,18 +141,18 @@ section#home h2 {
 }
 
 section#home p {
-    font-size: 14pt;
+    font-size: 15pt;
     text-align: justify;
     margin: 10px 0;
-    max-width: 600px;
+    max-width: 700px;
 }
 
 /* Sessão Serviços */
 
 section#servicos {
     color: #054fda;
-    background-color: #fff;
-    padding: 10px 20px 80px 20px;
+    background-color: #111B2D;
+    padding: 0;
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
@@ -161,15 +162,15 @@ section#servicos {
 section#servicos .titulo {
     width: 100%;
     text-align: left;
-    margin-bottom: 20px;
-    margin-top: 20px;
+    background-color: #fff;
+    padding-bottom: 20px;
 }
-section#servicos .borda{
-    width: 80px;
+
+section#servicos .titulo .borda{
+    width: 100px;
     background-color: #054fda;
     height: 6px;
     margin-left: 50px;
-    margin-bottom: 20px;
     border-radius: 10px;
   }
 
@@ -178,7 +179,7 @@ section#servicos .conteudo {
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
-    margin: 40px 0 10px 0;
+    margin: 40px 20px 100px 20px;
 }
 
 section#servicos .servico {
@@ -191,7 +192,7 @@ section#servicos .servico {
     box-sizing: border-box;
     transition: background-color 0.3s, box-shadow 0.3s;
     text-align: center;
-    color: #282e2b;
+    color: #0338a5;
 }
 
 section#servicos .servico:hover {
@@ -212,11 +213,12 @@ section#servicos h1 {
     font-size: 25pt;
     font-weight: bold;
     text-align: left;
-    margin: 10px 0;
-   padding-left: 30px;
+    margin: 0 0 5px 0;
+    padding: 20px 0 0 50px;
 }
 
 section#servicos h2 {
+    font-size: 20pt;
     margin: 0;
     text-align: center;
     text-transform: uppercase;
@@ -226,6 +228,7 @@ section#servicos h2 {
 
 section#servicos .servico p {
     margin: 0;
+    font-size: 12pt;
     text-align: center;
     max-width: 600px;
 }
@@ -244,36 +247,39 @@ section#sobre main{
     padding: 30px 0;
 }
 
-section#sobre main div.conteudo{
+section#sobre .conteudo{
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
-section#sobre main div.conteudo div{
+section#sobre .conteudo div{
     margin: 0 20px;
 }
 
-
-
 section#sobre img {
-    max-width: 400px;
+    max-width: 300px;
     margin-bottom: 10px;
     margin-left: 100px;
-    border-radius: 400px;
+    border-radius: 300px;
     border: 10px solid #054fda;
+}
+
+section#sobre .interface{
+ padding-top: 20px;
+ padding-bottom: 40px;
 }
 
 section#sobre h1{
     font-size: 25pt;
     font-weight: bold;
     text-align: left;
-    margin: 10px 0;
+    margin: 0 0 5px 0;
     padding-left: 50px;
 }
 
 section#sobre div.titulo div.borda{
-  width: 80px;
+  width: 100px;
   background-color: #054fda;
   height: 6px;
   margin-left: 50px;
@@ -283,9 +289,10 @@ section#sobre div.titulo div.borda{
 
 section#sobre p{
   text-align: justify;
+  font-size: 14pt;
   text-indent: 50px;
-  margin: 10px 50px 0 200px;
-  max-width: 800px;
+  margin: 10px 50px 20px 100px;
+  max-width: 700px;
 }
 
 /* Contato */
@@ -294,7 +301,7 @@ section#contato {
     background-repeat: no-repeat;
     background-size: cover;
     color: white;
-    padding: 50px 0;
+    padding: 20px 0 50px 0;
 }
 
 section#contato main.interface {
@@ -306,22 +313,21 @@ section#contato main.interface {
 section#contato div.titulo {
     width: 100%;
     padding-left: 50px;
+    padding-bottom: 10px;
 }
 
 section#contato h1 {
-    font-size: 36px;
+    font-size: 25pt;
     margin: 0;
     font-weight: bold;
-    text-transform: uppercase;
     text-align: left;  
-    padding-left: 25px;
 }
 
 section#contato div.titulo div.borda {
     width: 100px;
     background-color: #fff;
-    height: 4px;
-    margin: 10px 0px 30px 25px;  
+    height: 6px;
+    margin: 5px 0px 30px 0;  
     border-radius: 10px;
 }
 
@@ -334,27 +340,29 @@ section#contato main div.conteudo {
     gap: 40px;
 }
 
-section#contato main div.formulario {
+section#contato .formulario {
     flex: 1;
     background-color: rgba(255, 255, 255, 0.9);
-    padding: 30px;
-    border-radius: 10px;
+    padding: 20px 30px 30px 30px;
+    border-radius: 15px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    height: 80%;
 }
 
-section#contato main div.formulario form {
+section#contato .formulario form {
     display: flex;
     flex-direction: column;
     gap: 15px;
 }
 
-section#contato main div.formulario form label {
+section#contato .formulario form label {
     font-weight: bold;
     color: #333;
 }
 
-section#contato main div.formulario form input,
-section#contato main div.formulario form textarea {
+section#contato .formulario form input,
+section#contato .formulario form textarea {
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -362,7 +370,7 @@ section#contato main div.formulario form textarea {
     box-sizing: border-box;
 }
 
-section#contato main div.formulario form button {
+section#contato .formulario form button {
     padding: 10px 20px;
     background-color: #054fda;
     color: white;
@@ -372,11 +380,11 @@ section#contato main div.formulario form button {
     transition: background-color 0.3s;
 }
 
-section#contato main div.formulario form button:hover {
+section#contato .formulario form button:hover {
     background-color: #0338a5;
 }
 
-section#contato main div.mapa {
+section#contato .mapa {
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -385,23 +393,24 @@ section#contato main div.mapa {
     padding: 20px;
 }
 
-section#contato main div.mapa div#mapa {
-    width: 100%;
+section#contato .mapa div#mapa {
+    width: 90%;
     height: 350px;
     background-color: #cecece;
     border-radius: 10px;
     margin-bottom: 10px;
 }
 
-section#contato main div.mapa p {
+section#contato .mapa p {
     color: #fff;
     margin-top: 10px;
+    font-size: 12pt;
 }
 
 /* Footer */
 footer{
-    background-color: #fff;
-    color: #000;
+    background-color: #000;
+    color: #fff;
 }
 
 footer main.interface{
@@ -409,4 +418,8 @@ footer main.interface{
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+footer p{
+    margin: 0;
 }
