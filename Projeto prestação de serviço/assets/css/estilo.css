@@ -116,6 +116,15 @@ section#home .titulo {
     justify-content: left;
 }
 
+section#home .borda{
+    width: 80px;
+    background-color: #fff;
+    height: 6px;
+    margin-left: 50px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
 section#home h1 {
     font-size: 25pt;
     font-weight: bold;
@@ -149,17 +158,27 @@ section#servicos {
     justify-content: center;
 }
 
-#servicos .titulo {
+section#servicos .titulo {
     width: 100%;
     text-align: left;
     margin-bottom: 20px;
+    margin-top: 20px;
 }
+section#servicos .borda{
+    width: 80px;
+    background-color: #054fda;
+    height: 6px;
+    margin-left: 50px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+  }
 
-#servicos .conteudo {
+section#servicos .conteudo {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
+    margin: 40px 0 10px 0;
 }
 
 section#servicos .servico {
@@ -175,16 +194,16 @@ section#servicos .servico {
     color: #282e2b;
 }
 
-#servicos .servico:hover {
+section#servicos .servico:hover {
     background-color: #cecece;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-#servicos figure {
+section#servicos figure {
     margin: 0;
 }
 
-#servicos img {
+section#servicos img {
     max-width: 50px;
     margin-bottom: 10px;
 }
@@ -194,7 +213,7 @@ section#servicos h1 {
     font-weight: bold;
     text-align: left;
     margin: 10px 0;
-    padding-left: 30px;
+   padding-left: 30px;
 }
 
 section#servicos h2 {
@@ -222,7 +241,7 @@ section#sobre{
 section#sobre main{
     display:flex;
     flex-direction: column;
-    padding: 50px 0;
+    padding: 30px 0;
 }
 
 section#sobre main div.conteudo{
@@ -235,6 +254,15 @@ section#sobre main div.conteudo div{
     margin: 0 20px;
 }
 
+
+
+section#sobre img {
+    max-width: 400px;
+    margin-bottom: 10px;
+    margin-left: 100px;
+    border-radius: 400px;
+    border: 10px solid #054fda;
+}
 
 section#sobre h1{
     font-size: 25pt;
@@ -256,6 +284,129 @@ section#sobre div.titulo div.borda{
 section#sobre p{
   text-align: justify;
   text-indent: 50px;
-  margin: 10px 0;
+  margin: 10px 50px 0 200px;
   max-width: 800px;
+}
+
+/* Contato */
+section#contato {
+    background-image: url('../images/fundo-contato.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    padding: 50px 0;
+}
+
+section#contato main.interface {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section#contato div.titulo {
+    width: 100%;
+    padding-left: 50px;
+}
+
+section#contato h1 {
+    font-size: 36px;
+    margin: 0;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: left;  
+    padding-left: 25px;
+}
+
+section#contato div.titulo div.borda {
+    width: 100px;
+    background-color: #fff;
+    height: 4px;
+    margin: 10px 0px 30px 25px;  
+    border-radius: 10px;
+}
+
+section#contato main div.conteudo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    max-width: 1200px;
+    gap: 40px;
+}
+
+section#contato main div.formulario {
+    flex: 1;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+section#contato main div.formulario form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+section#contato main div.formulario form label {
+    font-weight: bold;
+    color: #333;
+}
+
+section#contato main div.formulario form input,
+section#contato main div.formulario form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+section#contato main div.formulario form button {
+    padding: 10px 20px;
+    background-color: #054fda;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+section#contato main div.formulario form button:hover {
+    background-color: #0338a5;
+}
+
+section#contato main div.mapa {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+section#contato main div.mapa div#mapa {
+    width: 100%;
+    height: 350px;
+    background-color: #cecece;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+section#contato main div.mapa p {
+    color: #fff;
+    margin-top: 10px;
+}
+
+/* Footer */
+footer{
+    background-color: #fff;
+    color: #000;
+}
+
+footer main.interface{
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
