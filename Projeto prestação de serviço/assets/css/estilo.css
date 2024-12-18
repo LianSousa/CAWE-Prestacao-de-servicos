@@ -118,7 +118,7 @@ section#home .titulo {
     align-items: flex-start;
 }
 
-section#home .borda{
+section#home .borda {
     width: 100px;
     height: 6px;
     background-color: white;
@@ -166,13 +166,13 @@ section#servicos .titulo {
     padding-bottom: 20px;
 }
 
-section#servicos .titulo .borda{
+section#servicos .titulo .borda {
     width: 100px;
     background-color: #054fda;
     height: 6px;
     margin-left: 50px;
     border-radius: 10px;
-  }
+}
 
 section#servicos .conteudo {
     display: flex;
@@ -235,25 +235,24 @@ section#servicos .servico p {
 
 /* sessão sobre*/
 
-section#sobre{
+section#sobre {
     background-color: #fff;
     color: #054fda;
-   
-}   
+}
 
-section#sobre main{
-    display:flex;
+section#sobre main {
+    display: flex;
     flex-direction: column;
     padding: 30px 0;
 }
 
-section#sobre .conteudo{
+section#sobre .conteudo {
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
-section#sobre .conteudo div{
+section#sobre .conteudo div {
     margin: 0 20px;
 }
 
@@ -265,12 +264,12 @@ section#sobre img {
     border: 10px solid #054fda;
 }
 
-section#sobre .interface{
- padding-top: 20px;
- padding-bottom: 40px;
+section#sobre .interface {
+    padding-top: 20px;
+    padding-bottom: 40px;
 }
 
-section#sobre h1{
+section#sobre h1 {
     font-size: 25pt;
     font-weight: bold;
     text-align: left;
@@ -278,21 +277,21 @@ section#sobre h1{
     padding-left: 50px;
 }
 
-section#sobre div.titulo div.borda{
-  width: 100px;
-  background-color: #054fda;
-  height: 6px;
-  margin-left: 50px;
-  margin-bottom: 20px;
-  border-radius: 10px;
+section#sobre div.titulo div.borda {
+    width: 100px;
+    background-color: #054fda;
+    height: 6px;
+    margin-left: 50px;
+    margin-bottom: 20px;
+    border-radius: 10px;
 }
 
-section#sobre p{
-  text-align: justify;
-  font-size: 14pt;
-  text-indent: 50px;
-  margin: 10px 50px 20px 100px;
-  max-width: 700px;
+section#sobre p {
+    text-align: justify;
+    font-size: 14pt;
+    text-indent: 50px;
+    margin: 10px 50px 20px 100px;
+    max-width: 700px;
 }
 
 /* Contato */
@@ -320,14 +319,14 @@ section#contato h1 {
     font-size: 25pt;
     margin: 0;
     font-weight: bold;
-    text-align: left;  
+    text-align: left;
 }
 
 section#contato div.titulo div.borda {
     width: 100px;
     background-color: #fff;
     height: 6px;
-    margin: 5px 0px 30px 0;  
+    margin: 5px 0px 30px 0;
     border-radius: 10px;
 }
 
@@ -408,18 +407,18 @@ section#contato .mapa p {
 }
 
 /* Footer */
-footer{
+footer {
     background-color: #000;
     color: #fff;
 }
 
-footer main.interface{
+footer main.interface {
     padding: 10px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-footer p{
+footer p {
     margin: 0;
 }
