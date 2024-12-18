@@ -404,6 +404,7 @@ section#contato .mapa p {
     color: #fff;
     margin-top: 10px;
     font-size: 12pt;
+    margin-bottom: 0;
 }
 
 /* Footer */
@@ -421,4 +422,24 @@ footer main.interface {
 
 footer p {
     margin: 0;
+}
+
+/* responsividade */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 20pt;
+    }
+
+    .titulo .borda {
+        width: 80px;
+    }
+
+    section#contato .conteudo {
+        flex-direction: column;
+    }
+
+    section#contato .formulario,
+    section#contato .mapa {
+        width: 100%;
+    }
 }
