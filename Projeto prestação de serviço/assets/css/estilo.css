@@ -133,6 +133,14 @@ section#home h1 {
     margin: 0;
 }
 
+section#home img {
+    max-width: 100%; 
+    height: auto; 
+    margin: 10px 0 20px 200px; 
+    align-self: center; 
+}
+
+
 section#home h2 {
     font-size: 20pt;
     font-weight: bold;
@@ -424,22 +432,245 @@ footer p {
     margin: 0;
 }
 
-/* responsividade */
+/* Responsividade */
+
+/* Ajustes gerais para telas menores */
 @media (max-width: 768px) {
-    h1 {
-        font-size: 20pt;
+    /* Header */
+    header nav {
+        flex-direction: column;
+        align-items: flex-start;
     }
 
-    .titulo .borda {
-        width: 80px;
+    header nav ul {
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
     }
 
+    header nav ul li {
+        padding: 10px 0;
+    }
+
+    /* Home */
+    section#home main {
+        flex-direction: column;
+        align-items: center;
+        padding: 0 20px;
+    }
+
+    section#home .conteudo {
+        align-items: center;
+        text-align: center;
+    }
+
+    section#home img {
+        max-width: 100%;
+        margin: 20px 0;
+    }
+
+    section#home h2 {
+        text-align: center;
+    }
+
+    /* Serviços */
+    section#servicos .titulo {
+        text-align: center;
+    }
+
+    section#servicos .titulo .borda {
+        margin: 0 auto;
+    }
+
+    section#servicos .conteudo {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section#servicos .servico {
+        flex: 1 1 100%;
+        margin-bottom: 20px;
+    }
+
+    /* Sobre */
+    section#sobre .conteudo {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section#sobre img {
+        margin-left: 0;
+    }
+
+    section#sobre p {
+        margin: 10px;
+        text-indent: 0;
+        max-width: 90%;
+    }
+
+    /* Contato */
     section#contato .conteudo {
         flex-direction: column;
+        align-items: center;
     }
 
     section#contato .formulario,
     section#contato .mapa {
         width: 100%;
     }
+
+    section#contato .mapa div#mapa {
+        width: 100%;
+    }
+
+/* Responsividade */ 
+
+@media (max-width: 768px) { 
+
+/* Header Responsivo */ 
+
+header nav { 
+    flex-direction: column; 
+    align-items: flex-start; 
+} 
+
+header nav ul { 
+    flex-direction: column; 
+    width: 100%; padding: 0; 
+}
+
+header nav ul li { 
+    padding: 10px 0; 
+}
+
+/* Home Responsivo */ 
+
+section#home main { 
+    flex-direction: column; 
+    align-items: center; 
+    padding: 0 20px; 
+} 
+
+section#home .conteudo { 
+    align-items: center; 
+    text-align: center; 
+}
+
+@media (max-width: 768px) {
+    section#home img {
+        max-width: 100%;
+        height: auto;
+        margin: 20px 0; 
+        align-self: center;
+    }
+}
+
+
+section#home h2 { 
+    text-align: center; 
+} 
+
+/* Serviços Resposivo*/ 
+
+section#servicos .titulo { 
+    text-align: center; 
+} 
+
+section#servicos .titulo .borda { 
+    margin: 0 auto; 
+} 
+
+section#servicos .conteudo { 
+    flex-direction: column; 
+    align-items: center; 
+} 
+
+section#servicos .servico { 
+    flex: 1 1 100%; 
+    margin-bottom: 20px; 
+} 
+
+/* Sobre Responsivo*/ 
+
+section#sobre .conteudo { 
+    flex-direction: column; 
+    align-items: center; 
+} 
+
+section#sobre img { 
+    margin-left: 0; 
+}
+
+section#sobre p { 
+    margin: 10px; 
+    text-indent: 0; 
+    max-width: 90%; 
+} 
+
+/* Contato Responsivo*/ 
+
+section#contato .conteudo { 
+    flex-direction: column; 
+    align-items: center; 
+} 
+
+section#contato .formulario, section#contato .mapa { 
+    width: 100%; 
+} 
+
+section#contato .mapa div#mapa { 
+    width: 100%; 
+} 
+
+    
+/* Texto Geral responsivo*/ 
+
+h1 { 
+    font-size: 20pt; 
+} 
+
+h2 { 
+    font-size: 18pt; 
+}
+
+p { 
+    font-size: 14pt; 
+} 
+.titulo .borda { 
+    width: 80px; 
+} 
+
+} 
+
+/* Ajustes adicionais para telas ainda menores */
+ @media (max-width: 480px) { 
+
+section#home h1 { 
+    font-size: 18pt; 
+} 
+
+section#home h2 { 
+    font-size: 16pt;   
+} 
+
+section#home p { 
+    font-size: 12pt; 
+} 
+
+section#home main { 
+    padding: 0 10px; 
+} 
+
+section#home .conteudo { 
+    padding: 20px 10px; 
+} 
+
+section#contato .formulario { 
+    padding: 15px; 
+} 
+
+section#contato .mapa div#mapa { 
+    height: 250px; 
+} 
+}
 }
